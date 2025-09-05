@@ -4,13 +4,14 @@ pipeline {
     tools {
         jdk 'JDK_HOME'
         maven 'MAVEN_HOME'
-       
+        nodejs 'NODE_HOME'
     }
 
     environment {
-        TOMCAT_URL = 'http://51.20.173.68:9090/manager/text'
+        TOMCAT_URL = 'http://51.20.173.68/:9090/manager/html'
         TOMCAT_USER = 'admin'
         TOMCAT_PASS = 'admin'
+    }
 
         MAIN_REPO = 'https://github.com/charanteja08/fullstack_s104.git'
 
