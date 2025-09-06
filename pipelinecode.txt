@@ -8,16 +8,13 @@ pipeline {
     }
 
     environment {
-        TOMCAT_URL = 'http://51.20.173.68/:9090/manager/html'
+        TOMCAT_URL = 'http://51.20.173.68:9090/manager/text'
         TOMCAT_USER = 'admin'
         TOMCAT_PASS = 'admin'
-    }
 
         MAIN_REPO = 'https://github.com/charanteja08/fullstack_s104.git'
-
         BACKEND_DIR = 'crud_back'
         FRONTEND_DIR = 'crud_front'
-
         BACKEND_WAR = 'crud_back/target/springapp1.war'
         FRONTEND_WAR = 'crud_front/frontapp1.war'
     }
